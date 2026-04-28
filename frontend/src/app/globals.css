@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hls-primary: #0056A0;
+  --color-hls-accent: #D34C38;
+  --color-hls-bg: #F4F7FA;
+  --color-hls-text: #4A5568;
+}
+
+body {
+  background-color: var(--color-hls-bg);
+  color: var(--color-hls-text);
+}
