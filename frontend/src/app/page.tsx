@@ -131,8 +131,11 @@ export default async function Home() {
 
               <AnimateOnScroll direction="right" delay={700}>
                 <div className="pt-6">
-                  <Link href="/tentang-kami" className="inline-flex items-center justify-center bg-hls-primary hover:bg-blue-900 text-white px-8 py-3.5 rounded-lg font-bold transition-all shadow-md">
-                    Selengkapnya Tentang HLS
+                  <Link 
+                    href="/alat-berat" 
+                    className="block w-full text-center border border-[#1e3a5f] text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white font-semibold py-2 rounded-lg transition-colors"
+                  >
+                    Selengkapnya
                   </Link>
                 </div>
               </AnimateOnScroll>
@@ -306,7 +309,6 @@ export default async function Home() {
         </div>
 
         <div className="relative w-full overflow-hidden mt-8">
-          {/* Overlay gradien untuk memberikan efek fade di tepi kiri dan kanan */}
           <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
           <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
 

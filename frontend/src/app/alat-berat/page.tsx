@@ -237,14 +237,8 @@ export default function AlatBerat() {
                            <p className="font-bold text-hls-primary text-sm">Hubungi Kami</p>
                         </div>
                         <Link 
-                          href={`/alat-berat/${equipment.slug}`}
-                          className={`px-4 py-2 rounded-lg font-semibold transition-colors text-sm ${
-                            equipment.status === 'available'
-                              ? 'bg-hls-accent hover:bg-red-700 text-white shadow-sm'
-                              : 'bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none'
-                          }`}
-                          aria-disabled={equipment.status !== 'available'}
-                          tabIndex={equipment.status !== 'available' ? -1 : undefined}
+                          href={`/alat-berat/${equipment.slug}`} 
+                          className={`block w-full text-center text-white font-bold py-2 rounded-lg transition-colors ${equipment.status === 'available' ? 'bg-[#d94826] hover:bg-[#c03d1e]' : 'bg-gray-300 pointer-events-none'}`}
                         >
                           Inquire Now
                         </Link>
